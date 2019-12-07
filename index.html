@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>33RPM Records</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/23b7faacf3.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 200, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script> 
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<nav id="nav">
+  <div>
+    <a href="#nav"><img src="assets/img/33rpm.png" style="width:50px;height:50px"></a>
+  </div>
+  
+  <ul>
+    <li><a class="active" href="#nav">Home</a></li>
+    <li><a href="https://store.33rpm.cc">Store</a></li>
+    <li><a href="#artists">Artists</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul> 
+</nav>
+
+<div class="intro" id="intro">
+  <h1>Music without restrictions.</h1>
+  <a href="#artists"><button class="aboutbtn">Listen Now</button></a>
+</div>
+
+<div class="artists" id="artists">
+  <h1 class="artsttl">Artists</h1>
+  <div class="aw">
+    <img src="assets/img/aw.jpg" style="width:250px;height:250px">
+    <p class="awname" id="awname">Avoided Warranty</p>
+    <div class="awtwt" id="awtwt">
+      <a href="https://twitter.com/theakuma67"><i class="fab fa-twitter fa-lg"></i> 
+        Twitter</a>
+      </div>
+      <div class="awbc" id="awbc">
+        <a href="https://avoidedwarranty.bandcamp.com"><i class="fab fa-bandcamp fa-lg"></i> 
+          Bandcamp</a>
+        </div>
+        <div class="awsp" id="awsp">
+          <a href="https://open.spotify.com/artist/11wZaqsrhw1hDri0q1VYkW?si=2SZeOhIlQzS2sNQtsuBD0A"><i class="fab fa-spotify fa-lg"></i> 
+            Spotify</a>
+          </div>
+          <div class="awsc" id="awsc">
+            <a href="https://soundcloud.com/avoidedwarranty"><i class="fab fa-soundcloud fa-lg"></i> 
+              Soundcloud</a>
+            </div>
+          </div>
+          <div class="bkode" id="bkode">
+            <img src="assets/img/bkode.jpg" style="width:250px;height:250px">
+            <p class="bkodename" id="bkodename">Bkode</p>
+            <div class="bkodetwt" id="bkodetwt">
+              <a href="https://twitter.com/theakuma67"><i class="fab fa-twitter fa-lg"></i> 
+                Twitter</a>
+              </div>
+              <div class="bkodeinsta" id="bkodeinsta">
+                <a href="https://www.instagram.com/i_use_pixel_sorter_a_lot/"><i class="fab fa-instagram fa-lg"></i> 
+                  Instagram</a>
+                </div>
+                <div class="bkodeyt" id="bkodeyt">
+                  <a href="https://www.youtube.com/channel/UC6o3brn1wcgwVFFiIjc7OWQ"><i class="fab fa-youtube fa-lg"></i> 
+                    YouTube</a>
+                  </div>
+                  <div class="bkodebc" id="bkodebc">
+                    <a href="https://bkode.bandcamp.com"><i class="fab fa-bandcamp fa-lg"></i> 
+                      Bandcamp</a>
+                    </div>
+                    <div class="bkodesp" id="bkodesp">
+                      <a href="https://open.spotify.com/artist/0osKyoN9IPcn67Z1idmM7c?si=d1BX9OveTTSdFkmiSS5Mow"><i class="fab fa-spotify fa-lg"></i> 
+                        Spotify</a>
+                      </div>
+                      <div class="bkodesc" id="bkodesc">
+                        <a href="https://soundcloud.com/barkoded"><i class="fab fa-soundcloud fa-lg"></i> 
+                          Soundcloud</a>
+                        </div>
+                      </div>
+                      <div class="fratima">
+                        <img src="assets/img/fratima.jpg" style="width:250px;height:250px">
+                        <p class="fratimaname" id="fratimaname">FRATIMA</p>
+                        <div class="fratimatwt" id="fratimatwt">
+                          <a href="https://twitter.com/FRATIMA1"><i class="fab fa-twitter fa-lg"></i> 
+                            Twitter</a>
+                          </div>
+                          <div class="fratimabc" id="fratimabc">
+                            <a href="https://fratima.bandcamp.com"><i class="fab fa-bandcamp fa-lg"></i> 
+                              Bandcamp</a>
+                            </div>
+                            <div class="fratimasp" id="fratimasp">
+                              <a href="https://open.spotify.com/artist/1G4CJMclDk9FmchKPJ9ISg?si=Wpv9B3AVS9GUZYuHyezriQ"><i class="fab fa-spotify fa-lg"></i> 
+                                Spotify</a>
+                              </div>
+                              <div class="fratimasc" id="fratimasc">
+                                <a href="https://soundcloud.com/fratima"><i class="fab fa-soundcloud fa-lg"></i> 
+                                  Soundcloud</a>
+                                </div>
+                              </div>
+                              <div class="subclarity">
+                                <img src="assets/img/subclarity.jpg" style="width:250px;height:250px">
+                                <p class="subclarityname" id="subclarityname">Subclarity</p>
+                                <div class="subclaritytwt" id="subclaritytwt">
+                                  <a href="https://twitter.com/Subclarity"><i class="fab fa-twitter fa-lg"></i> 
+                                    Twitter</a>
+                                  </div>
+                                  <div class="fratimabc" id="fratimabc">
+                                    <a href="https://subclarity.bandcamp.com"><i class="fab fa-bandcamp fa-lg"></i> 
+                                      Bandcamp</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="about" id="about">
+                                  <h1 class="abtus">About Us</h1>
+                                  <p class="abttxt">33RPM started in the middle of 2018 as a group of people trying to make 
+                                    some cool stuff out of the limited tools we had, but in July of 2019, turned into
+                                    something greater than that. The three of us eventually launched the label we have right now,
+                                    and are looking forward to what we will bring in the future.
+                                  </p>
+                                </div>
+                                
+                                <div class="contact" id="contact">
+                                  <h1 class="cntctus">Contact Us</h1>
+                                  <p class="cntctxt">You can contact us via these places:</p>
+                                  <div class="email" id="email">
+                                    <a href="mailto:contact@33rpm.cc"><i class="fas fa-envelope fa-lg"></i> 
+                                      contact@33rpm.cc</a>
+                                    </div>
+                                    <div class="cntcttwt" id="cntcttwt">
+                                      <a href="https://twitter.com/33rpm_records"><i class="fab fa-twitter fa-lg"></i> 
+                                        Twitter</a>
+                                      </div>
+                                      <div class="cntctdiscord" id="cntctdiscord">
+                                        <a href="https://discord.gg/DbyJxxA"><i class="fab fa-discord fa-lg"></i> 
+                                          Discord</a>
+                                        </div>
+                                        <p class="cntctxt">We are also currently accepting demos at <span style="font-weight: bold;">
+                                          <a href="mailto:demos@33rpm.cc">demos@33rpm.cc.</span></a></p>
+                                        </div>
+                                        <footer>
+                                          <p> ©️ 33RPM Records and CosmicMedia. All rights reserved.</p>
+                                          <p> Site created by <a href=http://akuma67.xyz>Eli Zendaki</a></p>
+                                        </footer>
+                                        </html>

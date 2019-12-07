@@ -1,0 +1,523 @@
+/* My crappy CSS for the 33RPM website, hopefully this looks nice. */
+/* Basic Stuff */
+@keyframes flyin {
+  0% {
+    opacity: 0;
+    padding: 390px 45px;
+  }
+  100% {
+    opacity: 1;
+    padding: 365px 50px;
+  }
+}
+@keyframes bg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hovernav {
+  0% {
+    box-shadow: 0px;
+  }
+  100% {
+    box-shadow: 15px;
+  }
+}
+body {
+  background-color: #242424;
+  background-image: url(/assets/img/bryg.jpg);
+  animation-name: bg;
+  animation-duration: 0.45s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  background-color: #242424;
+  color: white;
+  margin: auto;
+  margin-right: -8px;
+  margin-left: -8px;
+  margin-bottom: -160px;
+  overflow: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #292929;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #292929;
+  opacity: 0.85;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin: auto;
+  text-decoration: none;
+  -webkit-transition: background-color;
+  transition: background-color;
+  transition-duration: 0.1s;
+}
+
+.active {
+  background-color: #292929;
+}
+
+/* Hover fade in??? */
+li a:hover {
+  background-color: #101010;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* Text */
+.intro {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 200%;
+  margin: auto;
+  text-align: left;
+  padding: 365px 50px;
+  color: white;
+  animation-name: flyin;
+  animation-duration: 0.5s;
+}
+
+/* Button Under */
+.aboutbtn {
+  background-color: #292929;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 36px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.aboutbtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Artists Section */
+.artists {
+  background-color: #323232;
+  margin: auto;
+  margin-top: 160px;
+  margin-right: -8px;
+  margin-left: -8px;
+  margin-bottom: -160px;
+  padding-bottom: 75px;
+  overflow: auto;
+}
+
+.artsttl {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 375%;
+  padding-top: 50px;
+  padding: 75px 50px;
+}
+
+/* Avoided Warranty */
+.aw {
+  color: white;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.awname {
+  color: white;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 200%;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.awtwt {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.awbc {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.awsp {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.awsc {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* Bkode */
+.bkode {
+  color: white;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.bkodename {
+  color: white;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 200%;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.bkodetwt {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bkodeinsta {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.bkodeyt {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.bkodebc {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.bkodesp {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.bkodesc {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* FRATIMA */
+.fratima {
+  color: white;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.fratimaname {
+  color: white;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 200%;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.fratimatwt {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.fratimabc {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.fratimasp {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.fratimasc {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* Subclarity */
+.subclarity {
+  color: white;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.subclarityname {
+  color: white;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 200%;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.subclaritytwt {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.subclaritybc {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* About Section */
+.about {
+  background-color: #292929;
+  margin: auto;
+  margin-top: 160px;
+  margin-right: -8px;
+  margin-left: -8px;
+  margin-bottom: -8px;
+  padding-bottom: 75px;
+  overflow: auto;
+}
+
+.abtus {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 375%;
+  padding-top: 50px;
+  padding: 75px 50px;
+}
+
+.abttxt {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #202020;
+  margin: auto;
+  margin-right: -8px;
+  margin-left: -8px;
+  margin-bottom: -8px;
+  padding-top: 5px;
+  padding-bottom: 55px;
+  overflow: auto;
+}
+
+.cntctus {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 375%;
+  padding-top: 50px;
+  padding: 75px 50px;
+}
+
+.cntctxt {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.cntctemail {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  font-weight: 400;
+  padding-left: 50px;
+}
+
+.email {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  font-weight: 400;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.cntcttwt {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  font-weight: 400;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.cntctdiscord {
+  color: white;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 130%;
+  font-weight: 400;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
